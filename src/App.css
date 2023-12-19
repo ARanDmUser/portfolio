@@ -1,0 +1,482 @@
+@import"https://fonts.googleapis.com/css2?family=Nabla&display=swap";
+@import"https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap";
+@import"https://fonts.googleapis.com/css2?family=Six+Caps&display=swap";
+@import"https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon+SC&display=swap";
+
+body {
+    background: #0a0441;
+    color: #fff
+}
+
+header {
+    width: 60px;
+    background: rgba(255, 255, 255, .336);
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid yellowgreen;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Nabla, cursive;
+    margin: 40px
+}
+
+.header {
+    transform: translateX(-100%);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    opacity: 0;
+}
+
+.header.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+.logo {
+    transform: translateX(-100%);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+    opacity: 0;
+}
+
+.logo.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+main {
+    width: 100%;
+    height: 200px;
+    font-size: 40px;
+    margin: 70px 10px 50px 36px;
+}
+
+.info {
+    width: 300px;
+    transform: translateY(-40%) ;
+    transition: opacity 0.6s ease, transform 0.6s ease;
+    opacity: 0;
+}
+
+.info.visible {
+    transform: translateY(0%) ;
+    opacity: 1;
+
+}
+
+main .info span {
+    color: red;
+    font-family: Nabla, cursive;
+    font-size: 40px
+}
+
+
+
+section {
+    width: auto;
+    height: 100px;
+    margin-top: 90px;
+    margin-left: 38px;
+}
+
+section button {
+    padding: 10px 15px;
+    font-size: 15px;
+    background-color: #00008b;
+    border: 2px solid yellow;
+    outline: none;
+    color: #fff;
+    font-family: Bungee Spice, cursive;
+    border-radius: 20px;
+    transition: .5s
+}
+
+section button a {
+    text-decoration: none
+}
+
+section button:hover {
+    background-color: #000;
+    color: #000;
+    letter-spacing: 3px;
+    box-shadow: -2px 2px 3px #ff0, 2px 2px 6px #ff0, 2px 2px 9px #ff0, 2px 2px 13px #ff0, 2px 2px 16px #ff0, 2px 2px 23px #fff
+}
+
+.btn {
+    transform: translateX(100%);
+    transition: opacity 0.9s ease, transform 1s ease;
+    opacity: 0;
+}
+
+.btn.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.contact {
+    margin-top: 90px;
+}
+
+.head p {
+    font-size: 25px;
+    text-align: center;
+    border-left: 5px solid yellow;
+    width: 220px;
+    margin: auto;
+    font-family: IM Fell French Canon SC, serif;
+    -webkit-text-stroke: .2px yellow
+}
+
+.head p {
+    transform: translateY(200%);
+    transition: opacity 1s ease, transform 1s ease;
+    opacity: 0;
+}
+
+.head.visible p {
+    opacity: 1;
+    transform: translateY(-5%);
+}
+
+
+.items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 80px;
+    row-gap: 20px
+}
+
+.line {
+    position: absolute;
+    width: 2px;
+    height: 430px;
+    background-color: #fff;
+    left: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px
+}
+
+.line {
+    transform: translateY(200px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    opacity: 0;
+}
+
+.line.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.line div {
+    transform: translateX(-100px);
+    transition: opacity 0.9s ease, transform 1s ease;
+    opacity: 0;
+}
+
+.line.visible div{
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.line.visible div:nth-child(1){
+    transition-delay: 0.1s
+}
+.line.visible div:nth-child(2){
+    transition-delay: 0.3s
+}
+.line.visible div:nth-child(3){
+    transition-delay: 0.6s
+}
+.line.visible div:nth-child(4){
+    transition-delay: .9s
+}
+.line.visible div:nth-child(5){
+    transition-delay: 1.2s
+}
+
+.line div {
+    width: 10px;
+    height: 10px;
+    background-color: #ff0;
+    border-radius: 20px
+}
+
+.exp {
+    margin-left: 100px
+}
+
+/* 
+.exp {
+    transform: translateX(-50%);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    opacity: 0;
+}
+
+.exp.visible {
+    opacity: 1;
+    transform: translateX(0);
+} */
+
+
+.exp div {
+    transform: translateX(100%);
+    transition: opacity 1s ease, transform 1s ease;
+    opacity: 0;
+}
+
+.exp.visible div{
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.exp.visible div:nth-child(1){
+    transition-delay: 0.2s
+}
+.exp.visible div:nth-child(2){
+    transition-delay: 0.4s
+}
+.exp.visible div:nth-child(3){
+    transition-delay: 0.7s
+}
+.exp.visible div:nth-child(4){
+    transition-delay: 0.9s
+}
+.exp.visible div:nth-child(5){
+    transition-delay: 1.2s
+}
+
+.work-experience {
+    padding-bottom: 20px;
+    margin: 15px 0 0 15px
+}
+
+.work-experience:nth-child(2) {
+    margin-top: 14px;
+    border: none
+}
+
+.work-experience:nth-child(3) {
+    margin-top: 14px;
+    border: none
+}
+
+.work-experience:nth-child(4) {
+    margin-top: 14px;
+    border: none
+}
+
+.position {
+    font-weight: 700
+}
+
+.company {
+    font-style: italic;
+    color: #ff0
+}
+
+.dates {
+    color: #666
+}
+
+footer {
+    position: relative;
+    top: 100px;
+    margin-bottom: 100px
+}
+
+footer .social h1 {
+    font-size: 25px;
+    text-align: center;
+    border-left: 5px solid yellow;
+    width: 100px;
+    margin: auto;
+    font-family: IM Fell French Canon SC, serif;
+    -webkit-text-stroke: .1px yellow
+}
+
+.footer .social h1 {
+    transform: translateY(200%);
+    transition: opacity 1s ease, transform 1s ease;
+    opacity: 0;
+}
+
+.footer .social.visible h1{
+    opacity: 1;
+    transform: translateY(-5%);
+}
+.list-items {
+    margin: 50px auto;
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px
+}
+
+.item {
+    border: 1px solid #ccc;
+    padding: 10px
+}
+
+* {
+    margin: 0;
+    padding: 0
+}
+
+.container {
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0a0441;
+    transition: 0.5s;
+}
+
+
+
+
+
+.icons {
+    transform: translateX(50%);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+    opacity: 0;
+}
+
+.icons.visible  {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* .icons.visible a{
+    transition-delay:  calc(var(--i) * 0.5s);
+} */
+
+
+.icons a {
+    display: inline-flex;
+    width: 100px;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 40px;
+    margin: 10px;
+    box-shadow: 0 10px 10px #0000001a;
+    border-radius: 50%;
+    background-size: 100% 200%;
+    background-position: 0% 5%;
+    transition: background-position .5s, color .5s
+}
+
+
+.icons a:nth-child(1) {
+    color: #1976d3;
+    background-image: linear-gradient(#fff 50%, yellow 50%);
+     transition-delay: 0.2s
+}
+
+.icons a:nth-child(2) {
+    color: #db6f44;
+    background-image: linear-gradient(#fff 50%, yellow 50%);
+     transition-delay: 0.4s
+}
+
+.icons a:nth-child(3) {
+    color: #000;
+    background-image: linear-gradient(#fff 50%, yellow 50%);
+     transition-delay: 0.6s
+}
+
+.icons a:nth-child(4) {
+    color: #03a9f5;
+    background-image: linear-gradient(#fff 50%, yellow 50%);
+     transition-delay: 0.8s
+}
+
+.icons a:hover {
+    background-position: 0% 100%;
+    color: #fff
+}
+
+.icons a:hover:nth-child(1) {
+    color: #1976d3
+}
+
+.icons a:hover:nth-child(2) {
+    color: #db6f44
+}
+
+.icons a:hover:nth-child(3) {
+    color: #000
+}
+
+.icons a:hover:nth-child(4) {
+    color: #03a9f5
+}
+
+@media screen and (max-width: 480px) {
+    .icons {
+        display: flex;
+        flex-direction: column
+    }
+}
+
+@media screen and (min-width: 480px) {
+    header {
+        margin: 20px
+    }
+
+    main {
+        margin-left: 372px;
+        margin-top: 200px;
+        scale: 2
+    }
+
+    section button {
+        position: relative;
+        left: 200px;
+        top: 150px;
+        scale: 1.2
+    }
+
+    .contact {
+        margin-top: 250px;
+        scale: 1.3
+    }
+
+    .line {
+        margin-left: 700px
+    }
+
+    .container {
+        height: 30vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #0a0441
+    }
+
+    footer {
+        margin-top: 100px
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    header {
+        margin: 20px
+    }
+
+    main {
+        margin-left: 1100px;
+        margin-top: 200px;
+        scale: 2
+    }
+}
